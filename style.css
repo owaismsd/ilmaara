@@ -1,0 +1,35 @@
+
+.logo-container img {
+    max-width: 150px; /* Adjust the size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.containers{
+    width: 60rem;
+    height: 50rem;
+    margin: 0;
+}
+
+footer, h5{
+    color: rgb(210, 208, 208);
+}
+
+
+.right-sidebar {
+    width: 17.6rem; /* Adjust the width */
+    height: 50rem;
+    position: absolute;
+    top: 10.78em; 
+    /* background-color: #f8f9fa; */
+    /* border: 1px solid #ddd; */
+}
+
+@media (max-width: 767.98px) {
+    .right-sidebar {
+        display: none;
+    }
+}
+
+.right-sidebar {
+    right: 0;
+}
