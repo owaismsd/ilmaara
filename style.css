@@ -5,9 +5,12 @@
 }
 
 .containers{
-    width: 60rem;
+    
     height: 50rem;
-    margin: 0;
+    
+    max-width: 60rem; /* Instead of fixed width, use max-width */
+    margin: 0 auto; /* Center the container */
+    
 }
 
 footer, h5{
@@ -34,5 +37,3 @@ footer, h5{
     right: 0;
 }
 
- }
-}
