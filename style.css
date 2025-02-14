@@ -37,3 +37,7 @@ footer, h5{
     right: 0;
 }
 
+
+.hidden { display: none; }
+.highlight { background-color: yellow; font-weight: bold; }
+
