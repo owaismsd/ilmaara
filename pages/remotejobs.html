@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <style>
       #navbar {
         transition: top 0.3s ease-in-out;
@@ -38,41 +39,14 @@
         width: 100%;
         z-index: 1000;
       }
-      .card-img-top {
-        transition: transform 0.3s ease-in-out;
+      .link,
+      a {
+        text-decoration: none;
       }
-      .card {
-        position: relative;
-        overflow: hidden; /* Prevents any content from overflowing the card */
-      }
-
-      .card-img-top {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the image fills the container without stretching */
-        transition: transform 0.3s ease; /* Smooth transition on hover */
-      }
-
-      .card:hover .card-img-top {
-        transform: scale(1.1); /* Scale the image on hover */
-      }
-
-      .card-img-top {
-        width: 100%; /* Ensures the image fills the container width */
-        height: 200px; /* Fixed height for all images */
-        object-fit: cover; /* Ensures the image fills the container without distortion */
-        transition: transform 0.3s ease; /* Smooth transition for scaling */
-      }
-
-      .card-img-top:hover {
-        transform: scale(1.1);
-      }
-      h5,
-      img {
+      .link:hover {
         cursor: pointer;
-      }
-      h5:hover {
-        color: #014d72;
+        font-weight: 400;
+        text-decoration: underline;
       }
       @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
       .logo-text {
@@ -84,9 +58,13 @@
   </head>
   <body>
     <!-- Logo Section -->
-    <div class="text-start container-fluid my-3">
+    <div
+      onclick="location.href='../../index.html'"
+      style="cursor: pointer"
+      class="text-start container-fluid my-3"
+    >
       <img
-        src="logoo.png"
+        src="../logoo.png"
         alt="Logo"
         class="img-fluid"
         style="max-width: 200px"
@@ -99,7 +77,9 @@
       id="navbar"
     >
       <div class="container-fluid">
-        <a class="navbar-brand logo-text me-5" href="index.html">iLMAARA</a>
+        <a class="navbar-brand logo-text me-5" href="../../index.html"
+          >iLMAARA</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -182,15 +162,15 @@
               >
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">anything</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Awareness Session</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item ms-2">
-              <a class="nav-link" aria-current="page" href="#">Anything</a>
+            <li class="nav-item">
+              <a class="nav-link ms-2" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -217,172 +197,123 @@
     <div class="container d-md-flex align-items-stretch">
       <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <div class="container my-4">
-          <div class="row">
-            <!-- Loop to create 12 cards -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/remotejobs.jpg"
-                  onclick="window.location.href='pages/remotejobs.html'"
-                  class="card-img-top"
-                  alt="Image 1"
-                />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5
-                    class="card-title"
-                    onclick="window.location.href='pages/remotejobs.html'"
-                  >
-                    Top Sites for Remote Jobs & Freelance Work Online
-                  </h5>
-                  <span class="text-end text-secondary"> Alina </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/poetrys.png"
-                  class="card-img-top"
-                  alt="Image 2"
-                />
-
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Top Resources for Literature, Poetry, & Exam Prep
-                  </h5>
-                  <span class="text-end text-secondary"> Sobia </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/AIML.PNG" class="card-img-top" alt="Image 3" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best AI Learning & Full-Stack Development Resources
-                  </h5>
-                  <span class="text-end text-secondary"> Alina </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/css.png" class="card-img-top" alt="Image 4" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Chinese Scholarships & CSC Official Guide for Students
-                  </h5>
-                  <span class="text-end text-secondary"> Junaid </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/wwf.png" class="card-img-top" alt="Image 4" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    How WWF Pakistan is Protecting Nature & Water Ecosystems
-                  </h5>
-                  <span class="text-end text-secondary"> Sundas </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/ebook.png"
-                  class="card-img-top"
-                  alt="Image 4"
-                />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best eBook Websites for Downloading & Reading Online
-                  </h5>
-                  <span class="text-end text-secondary"> Fakhr </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/english.jpg"
-                  class="card-img-top"
-                  alt="Image 2"
-                />
-
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best Online English Language Learning Resources
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Sobia </span> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/AIML.PNG" class="card-img-top" alt="Image 3" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best Online English Language Learning Resources
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Alina </span> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/css.png" class="card-img-top" alt="Image 4" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Chinese Scholarships & CSC Official Guide for Students
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Junaid  </span> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img src="images/wwf.png" class="card-img-top" alt="Image 4" />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    How WWF Pakistan is Protecting Nature & Water Ecosystems
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Sundas </span> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/IELTS.png"
-                  class="card-img-top"
-                  alt="Image 4"
-                />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best Websites for IELTS Preparation, Mock Tests & Practice
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Owais </span> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <img
-                  src="images/IELTS.png"
-                  class="card-img-top"
-                  alt="Image 4"
-                />
-                <div class="card-body d-flex h-100 flex-column">
-                  <h5 class="card-title">
-                    Best Websites for IELTS Preparation, Mock Tests & Practice
-                  </h5>
-                  <!-- <span class="text-end text-secondary"> Owais </span> -->
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Start Here...  -->
+        <div class="col-md-12 mx-auto">
+          <h2 class="fw-bold">Tech Career Opportunities</h2>
+          <p class="mt-4 fs-5">
+            <a
+              href="https://weworkremotely.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="text-primary link">We Work Remotely </span></a
+            >
+            Careers in Tech Marketing and Customer Support The demand for
+            skilled professionals in tech marketing and customer support is
+            growing as businesses adopt digital solutions and remote work. Tech
+            careers such as software development cybersecurity and AI provide
+            excellent job opportunities with high salaries. Marketing roles in
+            SEO social media and content strategy help businesses grow and reach
+            more customers. Customer support has improved with AI chatbots
+            remote agents and customer experience specialists making services
+            more efficient. Professionals can boost their careers through online
+            certifications freelancing and networking. With remote and hybrid
+            work becoming common these fields offer stability growth and great
+            opportunities for the future.
+          </p>
+        </div>
+        <div class="col-md-12 mx-auto">
+          <h2 class="fw-bold mt-5">
+            Remote.co: Find the Best Remote Jobs Easily
+          </h2>
+          <p class="mt-3 fs-5">
+            <a
+              href="https://remote.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="text-primary link">Remote.co</span></a
+            >
+            is a trusted platform that connects job seekers with top remote job
+            opportunities. It features job listings in various fields like
+            technology, marketing, customer support, and design. Companies
+            worldwide use Remote.co to hire skilled professionals who can work
+            from anywhere. Tech roles include software development,
+            cybersecurity, and data analysis, while marketing jobs focus on SEO,
+            content creation, and social media. Customer support positions help
+            businesses serve clients efficiently. Remote work offers
+            flexibility, work-life balance, and global opportunities. With the
+            rise of digital tools, platforms like Remote.co make it easier to
+            find reliable remote jobs for freelancers and full-time workers.
+          </p>
+        </div>
+        <div class="col-md-12 mx-auto">
+          <h2 class="fw-bold mt-5">
+            FlexJobs: The Best Platform for Remote Job Seekers
+          </h2>
+          <p class="mt-3 fs-5">
+            <a
+              href="https://www.flexjobs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="text-primary link">FlexJobs </span></a
+            >
+            is a leading job platform that helps professionals find remote,
+            freelance, and flexible job opportunities. It provides hand-screened
+            job listings in various fields, including technology, marketing,
+            customer support, writing, and design. Unlike traditional job
+            boards, FlexJobs ensures that all listings are legitimate, reducing
+            the risk of scams. Users can access exclusive job postings, career
+            coaching, and resume tips to enhance their job search. Whether you
+            are a freelancer or looking for full-time remote work, FlexJobs
+            offers a secure and efficient way to explore global opportunities
+            while enjoying work-life balance and career growth.
+          </p>
+        </div>
+        <div class="col-md-12 mx-auto">
+          <h2 class="fw-bold mt-5">
+            Jobspresso: A Leading Job Board for Remote Work
+          </h2>
+          <p class="mt-3 fs-5">
+            <a
+              href="https://jobspresso.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="text-primary link">Jobspresso</span></a
+            >
+            is a trusted remote job board that connects professionals with top
+            remote job opportunities in technology, marketing, customer support,
+            and more. It features hand-picked job listings from reputable
+            companies, ensuring a scam-free experience for job seekers.
+            Employers use Jobspresso to hire skilled remote workers for roles in
+            software development, digital marketing, design, and writing. The
+            platform also allows users to upload their resumes, making it easier
+            for recruiters to find top talent. Whether you are looking for a
+            full-time remote job or freelance work, Jobspresso offers a reliable
+            and efficient way to build a successful remote career.
+          </p>
+        </div>
+        <div class="col-md-12 mx-auto">
+          <h2 class="fw-bold mt-5">
+            Remotive.io: A Trusted Platform for Remote Jobs
+          </h2>
+          <p class="mt-3 fs-5">
+            <a
+              href="https://www.remote.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="text-primary link">Remotive.io</span></a
+            >
+            is a popular job board that connects professionals with high-quality
+            remote job opportunities worldwide. It features remote jobs in
+            various fields like technology, marketing, customer support, and
+            design. Unlike traditional job sites, Remotive.io carefully curates
+            job listings to ensure they are legitimate and scam-free. Companies
+            post remote-friendly jobs for developers, marketers, writers, and
+            more. The platform also offers career advice, remote work resources,
+            and a community for job seekers. Whether you are looking for
+            freelance gigs or full-time remote roles, Remotive.io provides a
+            reliable way to find flexible job opportunities and build a
+            successful remote career.
+          </p>
         </div>
       </div>
 
@@ -396,7 +327,7 @@
                 data-toggle="collapse"
                 aria-expanded="false"
                 class="dropdown-toggle"
-                >Remote Jobs</a
+                >Mens Shoes</a
               >
               <ul class="collapse list-unstyled" id="pageSubmenu1">
                 <li>
@@ -442,7 +373,7 @@
                 data-toggle="collapse"
                 aria-expanded="false"
                 class="dropdown-toggle"
-                >Freelance Work</a
+                >Mens Shoes</a
               >
               <ul class="collapse list-unstyled" id="pageSubmenu2">
                 <li>
@@ -488,7 +419,7 @@
                 data-toggle="collapse"
                 aria-expanded="false"
                 class="dropdown-toggle"
-                >Literature Resources</a
+                >Accessories</a
               >
               <ul class="collapse list-unstyled" id="pageSubmenu3">
                 <li>
@@ -524,7 +455,7 @@
                 data-toggle="collapse"
                 aria-expanded="false"
                 class="dropdown-toggle"
-                >AI Learning</a
+                >Clothes</a
               >
               <ul class="collapse list-unstyled" id="pageSubmenu4">
                 <li>
@@ -558,24 +489,15 @@
           <div class="mb-5">
             <h5>Tag Cloud</h5>
             <div class="tagcloud">
-              <a href="#" class="tag-cloud-link">Jobs</a>
-              <a href="#" class="tag-cloud-link">Freelance</a>
-              <a href="#" class="tag-cloud-link">Literature</a>
-              <a href="#" class="tag-cloud-link">Poetry</a>
-              <a href="#" class="tag-cloud-link">AI</a>
-              <a href="#" class="tag-cloud-link">Development</a>
-              <a href="#" class="tag-cloud-link">Scholarships</a>
-              <a href="#" class="tag-cloud-link">eBooks</a>
+              <a href="#" class="tag-cloud-link">dish</a>
+              <a href="#" class="tag-cloud-link">menu</a>
+              <a href="#" class="tag-cloud-link">food</a>
+              <a href="#" class="tag-cloud-link">sweet</a>
+              <a href="#" class="tag-cloud-link">tasty</a>
+              <a href="#" class="tag-cloud-link">delicious</a>
+              <a href="#" class="tag-cloud-link">desserts</a>
+              <a href="#" class="tag-cloud-link">drinks</a>
             </div>
-          </div>
-          <div class="mb-5">
-            <h5></h5>
-            <!-- <form action="#" class="subscribe-form">
-          <div class="form-group d-flex">
-            <div class="icon"><span class="icon-paper-plane">HOw</span></div>
-            <input type="text" class="form-control" placeholder="Enter Email Address">
-          </div>
-        </form> -->
           </div>
         </div>
       </nav>
@@ -585,9 +507,13 @@
       <div class="container p-4">
         <div class="row">
           <!-- Left side: Logo & Copyright -->
-          <div class="col-md-6 d-flex align-items-center">
+          <div
+            class="col-md-6 d-flex align-items-center"
+            onclick="location.href='../../index.html'"
+            style="cursor: pointer"
+          >
             <img
-              src="logoo.png"
+              src="../logoo.png"
               alt="Logo"
               style="max-height: 40px"
               class="me-2"
@@ -601,11 +527,21 @@
               <!-- Twitter -->
               <i class="fab fa-twitter fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/__ilmaara/?igsh=MTNtNGZwc3psc3dlOA%3D%3D&utm_source=qr#" target="_blank" class="me-3" style="color: #e4405f">
+            <a
+              href="https://www.instagram.com/__ilmaara/?igsh=MTNtNGZwc3psc3dlOA%3D%3D&utm_source=qr#"
+              target="_blank"
+              class="me-3"
+              style="color: #e4405f"
+            >
               <!-- Instagram -->
               <i class="fab fa-instagram fa-lg"></i>
             </a>
-            <a href="https://www.facebook.com/people/Ilmaara/61572958970101/#" target="_blank" class="me-3" style="color: #1877f2">
+            <a
+              href="https://www.facebook.com/people/Ilmaara/61572958970101/#"
+              target="_blank"
+              class="me-3"
+              style="color: #1877f2"
+            >
               <!-- Facebook -->
               <i class="fab fa-facebook fa-lg"></i>
             </a>
