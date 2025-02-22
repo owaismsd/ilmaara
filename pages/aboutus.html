@@ -120,6 +120,53 @@ html {
 .fw-bold{
     color: #02343F;
 }
+p:hover{
+  cursor: pointer;
+}
+h2:hover{
+  cursor: pointer;
+  color: #555252;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.02); /* Slight Zoom */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Shadow */
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .fw{
+    font-weight: 600;
+  }
+  .title-text {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bb2f3d;
+    position: relative;
+  }
+
+  .left-line,
+  .right-line {
+    flex-grow: 1;
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, transparent, #007bff);
+  }
+
+  .right-line {
+    background: linear-gradient(to left, transparent, #007bff);
+  }
 
     </style>
   </head>
@@ -259,14 +306,19 @@ html {
             <p class="mt-4 fs-4">Our passionate team is dedicated to excellence, ensuring top-quality content, a seamless user experience, and valuable resources tailored for you. With a commitment to innovation and reliability, we strive to provide the best solutions for your needs. Every detail is crafted with care, making your journey smooth and enriching. Your trust inspires us to keep improving and delivering exceptional value. Join us as we continue to create, inspire, and empower!</p>
           </div>
           
-          <h2 class="text-center fw-bold pb-4 text-danger">Our Team</h2>
+          <div class="section-title">
+            <hr class="left-line">
+            <span class="title-text">Our Team</span>
+            <hr class="right-line">
+          </div>
+          
           <div class="row">
             <div class="column">
               <div class="card">
                 <!-- <img src="../images/3.jpg" alt="Jane" style="width:100%"> -->
                 <div class="container">
-                  <h2 class="p-2 fw-bold">Sobia</h2>
-                  <p class="title">Team Lead</p>
+                  <h2 class="mt-3 fw">Sobia Sehar</h2>
+                  <p class="title">Project Leader</p>
                   <p class="" style="font-size: 20px;">Sobia oversees website management, ensuring smooth operation, setting goals, and addressing technical or content-related challenges. She coordinates updates and team meetings.</p>
                   <!-- <p>fakhr@example.com</p> -->
                   <!-- <p><button class="button">Contact</button></p> -->
@@ -278,8 +330,8 @@ html {
               <div class="card">
                 <!-- <img src="../images/2.jpg" alt="Mike" style="width:100%"> -->
                 <div class="container">
-                  <h2 class="pt-2 fw-bold">Fakhr E Alam</h2>
-                  <!-- <p class="title">Team Lead</p> -->
+                  <h2 class="mt-3 fw">Fakhr E Alam</h2>
+                  <p class="title">Developer</p>
                   <p class="pt-4" style="font-size: 20px;">Responsible for researching and curating relevant educational links for the website, focusing on technology and science content. He ensures the latest and most valuable resources are available.</p>
                   <!-- <p>sobia@example.com</p> -->
                   <!-- <p><button class="button">Contact</button></p> -->
@@ -291,8 +343,8 @@ html {
               <div class="card">
                 <!-- <img src="../images/3.jpg" alt="John" style="width:100%"> -->
                 <div class="container">
-                  <h2 class="pt-2 fw-bold">Sundus</h2>
-                  <p class="title">Designer</p>
+                  <h2 class="mt-3 fw">Sundus Ikhaq</h2>
+                  <p class="title">Social Media Head</p>
                   <p style="font-size: 20px;">Designs and maintains the website’s user interface, ensuring it is visually appealing, user-friendly, and optimized for a seamless experience.</p>
                   <!-- <p>sundas@example.com</p> -->
                   <!-- <p><button class="button">Contact</button></p> -->
@@ -305,8 +357,8 @@ html {
               <div class="card">
                 <!-- <img src="../images/3.jpg" alt="Jane" style="width:100%"> -->
                 <div class="container">
-                  <h2 class="pt-2 fw-bold">Muneer</h2>
-                  <p class="title">Digital Marketer</p>
+                  <h2 class="mt-3 fw">Muneer Ahmad</h2>
+                  <p class="title">Resources Curator</p>
                   <p style="font-size: 20px;">Manages digital marketing strategies to promote the website, increasing traffic and engagement through social media, SEO, and outreach campaigns.
                 </p>
                   <!-- <p>muneer@example.com</p> -->
@@ -319,8 +371,8 @@ html {
               <div class="card">
                 <!-- <img src="../images/2.jpg" alt="Mike" style="width:100%"> -->
                 <div class="container">
-                  <h2 class="pt-2 fw-bold">Alina</h2>
-                  <p class="title">Content Reviewer</p>
+                  <h2 class="mt-3 fw">Alina Nazir</h2>
+                  <p class="title">Resources Curator</p>
                   <p style="font-size: 20px;">Reviews and verifies all curated content before publication to maintain accuracy, credibility, and quality standards.</p>
                   <!-- <p>alina@example.com</p> -->
                   <!-- <p><button class="button">Contact</button></p> -->
