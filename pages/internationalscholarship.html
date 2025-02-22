@@ -30,27 +30,17 @@
     />
 
     <style>
-        .accordion-button {
-    background-color: #009bbe !important; /* Change to your desired color */
-    color: white !important; /* Change text color if needed */
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #336976 !important; /* Change color when active */
-    color: white !important;
-}
-        body{
-            background: #F0EDCC;
-            color: #02343F;
-        }
+      .texth2 {
+        color: #533871;
+      }
       h5 a {
         color: rgb(18, 20, 22);
+        font-weight: 600;
       }
       h5 a:hover {
         color: rgb(129, 125, 125);
       }
       #navbar {
-        font-weight: 500;
         transition: top 0.3s ease-in-out;
       }
       .navbar-fixed {
@@ -59,15 +49,28 @@
         width: 100%;
         z-index: 1000;
       }
+
       @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
       .logo-text {
         color: rgb(45, 45, 45);
         font-family: "Rubik", sans-serif;
         font-weight: 700; /* Adjust the weight */
       }
-      .texts{
-        color: #0c4a58;
+      .accordion-button {
+        background-color: #7637be !important; /* Change to your desired color */
+        color: white !important; /* Change text color if needed */
+      }
 
+      .accordion-button:not(.collapsed) {
+        background-color: #6a4d8a !important; /* Change color when active */
+        color: white !important;
+      }
+      body{
+        background-color: #f7f7f7;
+      }
+      .bg{
+        background-color: #bdb1c9;
+        font-weight: 500;
       }
     </style>
   </head>
@@ -88,7 +91,7 @@
 
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-light px-sm-3 px-md-4 px-2"
+      class="navbar navbar-expand-lg bg px-sm-3 px-md-4 px-2"
       id="navbar"
     >
       <div class="container-fluid">
@@ -242,12 +245,22 @@
     <div class="container d-md-flex align-items-stretch">
       <div id="content" class="p-4 p-md-5 pt-5">
         <!-- Start Here...  -->
-        <h2 class="texts fw-bold py-3">
-          Best Online English Language Learning Resources
+        <h2 class="texth2 fw-bold py-3">
+          Find International Scholarships Easily with These Top Websites
         </h2>
+        <p class="fs-5 text-dark">
+          Discover the best websites to find international scholarships
+          effortlessly! These platforms provide up-to-date scholarship listings
+          for students worldwide, covering various fields and study levels. Get
+          detailed eligibility criteria, application deadlines, and funding
+          opportunities in one place. Whether you need full scholarships,
+          partial funding, or research grants, these sites make the search
+          easier. Start exploring today and secure your dream education with the
+          right scholarship!
+        </p>
 
         <div class="accordion mt-4" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item mt-2">
             <h2 class="accordion-header" id="heading1">
               <button
                 class="accordion-button"
@@ -255,26 +268,29 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapse1"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseTwo"
               >
-                [1] BBC English
+                [1] ScholarshipRoar
               </button>
             </h2>
             <div
               id="collapse1"
               class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
+              aria-labelledby="headingTwo"
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >BBC Learning English</a
+                  <a
+                    href=" https://www.scholarship-positions.com"
+                    class="text-decoration-none"
+                    id="bookcollection"
+                    >ScholarshipRoar</a
                   >
                 </h5>
-                Offers daily lessons, grammar tips, and pronunciation guides
-                with real-life examples.
-                <a
-                  href=" https://www.bbc.co.uk/learningenglish"
+                Lists fully funded and partially funded scholarships for
+                undergraduate, master's, and PhD programs in various
+                countries.<a
+                  href=" https://www.scholarship-positions.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -293,7 +309,7 @@
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [2] Duolingo
+                [2] Scholarship Positions
               </button>
             </h2>
             <div
@@ -303,11 +319,16 @@
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none">Duolingo</a>
+                  <a
+                    href=" https://www.scholarship-positions.com"
+                    class="text-decoration-none"
+                    id="bookcollection"
+                    >Scholarship Positions</a
+                  >
                 </h5>
-                 A fun and interactive app for learning English through games
-                and daily practice.<a
-                  href=" https://www.duolingo.com"
+                 Provides information about international scholarships,
+                fellowships, and grants.<a
+                  href=" https://www.scholarship-positions.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -326,7 +347,7 @@
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [3] Grammarly
+                [3] Mudassar Chaudhry
               </button>
             </h2>
             <div
@@ -336,13 +357,15 @@
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Grammarly</a
+                  <a
+                    href=" https://www.youtube.com/@MudassarChaudhryofficial?sub_confirmation=1"
+                    class="text-decoration-none"
+                    >Mudassar Chaudhry</a
                   >
                 </h5>
-                Helps improve writing with grammar corrections, suggestions, and
-explanations.<a
-                  href=" https://www.grammarly.com"
+                A Pakistani Youtuber updating students about different
+                scholarship opportunities abroad<a
+                  href=" https://www.youtube.com/@MudassarChaudhryofficial?sub_confirmation=1"
                   class="fw-bold"
                 >
                   Learn More
@@ -360,7 +383,7 @@ explanations.<a
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [4] Cambridge English
+                [4] Scholars4Dev
               </button>
             </h2>
             <div
@@ -370,13 +393,15 @@ explanations.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Cambridge English</a
+                  <a
+                    href=" https://www.scholars4dev.com"
+                    class="text-decoration-none"
+                    >Scholars4Dev</a
                   >
                 </h5>
-                Provides free English tests, grammar resources, and exam
-preparation materials.<a
-                  href=" https://www.cambridgeenglish.org/learning-english"
+                Focuses on scholarships for developing countries and
+                international students.<a
+                  href=" https://www.scholars4dev.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -395,7 +420,7 @@ preparation materials.<a
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [5] British Council 
+                [5] WeMakeScholars
               </button>
             </h2>
             <div
@@ -405,13 +430,15 @@ preparation materials.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >British Council - Learn English</a
+                  <a
+                    href=" https://www.scholars4dev.com"
+                    class="text-decoration-none"
+                    >WeMakeScholars</a
                   >
                 </h5>
-                Offers free courses, videos, and grammar lessons
-for all levels.<a
-                  href=" https://learnenglish.britishcouncil.org"
+                A scholarship database with funding opportunities for students
+                in different countries.<a
+                  href=" https://www.scholars4dev.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -430,7 +457,7 @@ for all levels.<a
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [6] ESLpod.com 
+                [6] ScholarshipPortal
               </button>
             </h2>
             <div
@@ -440,20 +467,20 @@ for all levels.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >ESLpod.com (English as a Second Language Podcast)</a
+                  <a
+                    href=" https://www.wemakescholars.com"
+                    class="text-decoration-none"
+                    >ScholarshipPortal</a
                   >
                 </h5>
-                Helps learners improve
-listening skills with slow, clear audio lessons<a
-                  href=" https://www.eslpod.com"
-                  class="fw-bold"
-                >
+                A huge database of scholarships for all degree levels across the
+                world.<a href=" https://www.wemakescholars.com" class="fw-bold">
                   Learn More
                 </a>
               </div>
             </div>
           </div>
+
           <div class="accordion-item mt-2">
             <h2 class="accordion-header" id="heading7">
               <button
@@ -464,7 +491,7 @@ listening skills with slow, clear audio lessons<a
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [7] VOA English
+                [7] EduCanada Scholarships
               </button>
             </h2>
             <div
@@ -474,14 +501,16 @@ listening skills with slow, clear audio lessons<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >VOA Learning English</a
+                  <a
+                    href=" https://www.scholarshipportal.com"
+                    class="text-decoration-none"
+                    >EduCanada Scholarships</a
                   >
                 </h5>
-                News-based English lessons with slow and clear
-                pronunciation.
-                <a
-                  href=" https://learningenglish.voanews.com"
+                Official Canadian government website listing scholarships for
+                international students<a
+                  href=" https://www.educanada.ca/scholarships
+                  "
                   class="fw-bold"
                 >
                   Learn More
@@ -500,7 +529,7 @@ listening skills with slow, clear audio lessons<a
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [8] Oxford English
+                [8] DAAD Scholarships
               </button>
             </h2>
             <div
@@ -510,15 +539,12 @@ listening skills with slow, clear audio lessons<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Oxford Online English</a
+                  <a href=" https://www.daad.de/en" class="text-decoration-none"
+                    >DAAD Scholarships</a
                   >
                 </h5>
-                Professional English teachers provide video lessons on
-pronunciation, grammar, and business English.<a
-                  href=" https://www.oxfordonlineenglish.com"
-                  class="fw-bold"
-                >
+                A website collecting German scholarships for students
+                worldwide.<a href=" https://www.daad.de/en" class="fw-bold">
                   Learn More
                 </a>
               </div>
@@ -535,7 +561,7 @@ pronunciation, grammar, and business English.<a
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [9] FluentU
+                [9] Chevening Scholarships
               </button>
             </h2>
             <div
@@ -545,14 +571,15 @@ pronunciation, grammar, and business English.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >FluentU</a
+                  <a
+                    href=" https://www.chevening.org"
+                    class="text-decoration-none"
+                    >Chevening Scholarships</a
                   >
                 </h5>
-                Uses real-world videos like movie clips and news to teach English in
-context.
-<a
-                  href=" https://www.fluentu.com/en"
+                Provides information on fully funded UK scholarships for
+                international students.<a
+                  href=" https://www.chevening.org"
                   class="fw-bold"
                 >
                   Learn More
@@ -570,7 +597,7 @@ context.
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [10] EngVid 
+                [10] Erasmus Mundus
               </button>
             </h2>
             <div
@@ -580,11 +607,17 @@ context.
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >EngVid</a
+                  <a
+                    href=" https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus_en"
+                    class="text-decoration-none"
+                    >Erasmus Mundus Scholarships</a
                   >
                 </h5>
-                Free English video lessons from native-speaking teachers on various topics.<a href=" https://www.engvid.com" class="fw-bold">
+                Lists European scholarships for master’s and PhD students.
+                <a
+                  href=" https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus_en"
+                  class="fw-bold"
+                >
                   Learn More
                 </a>
               </div>
@@ -601,7 +634,7 @@ context.
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [11] English Grammar
+                [11] FindAPhD
               </button>
             </h2>
             <div
@@ -611,12 +644,15 @@ context.
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Perfect English Grammar</a
+                  <a
+                    href=" https://www.findaphd.com"
+                    class="text-decoration-none"
+                    >FindAPhD</a
                   >
                 </h5>
-                A site full of grammar exercises and explanations.<a
-                  href=" https://www.perfect-english-grammar.com"
+                A great platform for searching PhD scholarships and research
+                funding worldwide.<a
+                  href=" https://www.findaphd.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -635,7 +671,7 @@ context.
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [12] TalkEnglish
+                [12] FindAMasters
               </button>
             </h2>
             <div
@@ -645,14 +681,18 @@ context.
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >TalkEnglish</a
+                  <a
+                    href=" https://www.findamasters.com
+                  "
+                    class="text-decoration-none"
+                    >FindAMasters</a
                   >
                 </h5>
-                Helps improve speaking skills with dialogues and pronunciation
-guides.
-<a
-                  href=" https://www.talkenglish.com"
+                Lists scholarships and funding opportunities for master's
+                students.
+                <a
+                  href=" https://www.findamasters.com
+                  "
                   class="fw-bold"
                 >
                   Learn More
@@ -670,7 +710,7 @@ guides.
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [13] Elllo.org 
+                [13] International Scholarships
               </button>
             </h2>
             <div
@@ -680,13 +720,16 @@ guides.
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Elllo.org (English Listening Lessons Library Online)</a
+                  <a
+                    href=" https://www.internationalscholarships.com"
+                    class="text-decoration-none"
+                    >International Scholarships</a
                   >
                 </h5>
-                Audio-based lessons from
-different accents worldwide.<a
-                  href=" https://elllo.org"
+                A directory of scholarships available for students from
+                different countries.
+                <a
+                  href=" https://www.internationalscholarships.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -705,7 +748,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [14] UsingEnglish
+                [14] Scholarships Program
               </button>
             </h2>
             <div
@@ -716,10 +759,14 @@ different accents worldwide.<a
               <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
-                    >UsingEnglish</a
+                    >The World Bank Scholarships Program</a
                   >
                 </h5>
-                Provides grammar lessons, quizzes, and teacher resources.<a href=" https://www.usingenglish.com" class="fw-bold">
+                Lists scholarships funded by the World Bank for students in
+                developing countries.<a
+                  href=" https://www.worldbank.org/en/programs/scholarships"
+                  class="fw-bold"
+                >
                   Learn More
                 </a>
               </div>
@@ -736,7 +783,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [15] Breaking News English 
+                [15] MPOWER Financing Scholarships
               </button>
             </h2>
             <div
@@ -747,11 +794,12 @@ different accents worldwide.<a
               <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
-                    >Breaking News English</a
+                    >MPOWER Financing Scholarships</a
                   >
                 </h5>
-                Learn English through current news articles with different difficulty levels.<a
-                  href=" https://www.breakingnewsenglish.com"
+                A website that lists scholarships for international students
+                studying abroad.<a
+                  href=" https://www.mpowerfinancing.com/scholarships"
                   class="fw-bold"
                 >
                   Learn More
@@ -769,7 +817,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [16] ESL Library 
+                [16] ScholarshipsAds
               </button>
             </h2>
             <div
@@ -779,12 +827,10 @@ different accents worldwide.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    > ESL Library </a
-                  >
+                  <a href="" class="text-decoration-none">ScholarshipsAds</a>
                 </h5>
-                A collection of worksheets, grammar lessons, and vocabularybuilding exercises. <a
-                  href="https://esllibrary.com "
+                A global scholarship database with daily updates.<a
+                  href=" https://www.scholarshipsads.com"
                   class="fw-bold"
                 >
                   Learn More
@@ -803,7 +849,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                [17] Speechyard
+                [17] OYA Opportunities
               </button>
             </h2>
             <div
@@ -813,11 +859,14 @@ different accents worldwide.<a
             >
               <div class="accordion-body fs-5">
                 <h5>
-                  <a href="" class="text-decoration-none"
-                    >Speechyard</a
-                  >
+                  <a href="" class="text-decoration-none">OYA Opportunities </a>
                 </h5>
-                Helps learners improve English by watching movies and TV shows with subtitles. <a href="https://www.speechyard.com " class="fw-bold"> Learn More </a>
+                Lists scholarships, internships, and conferences worldwide.<a
+                  href=" https://www.oyaop.com"
+                  class="fw-bold"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -832,7 +881,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                [18] Lang-8 
+                [18] Global Scholarships
               </button>
             </h2>
             <div
@@ -843,10 +892,16 @@ different accents worldwide.<a
               <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
-                    >Lang-8 </a
+                    >Global Scholarships</a
                   >
                 </h5>
-                A community-driven platform where native speakers correct your written English.<a href=" https://lang-8.com" class="fw-bold"> Learn More </a>
+                A database for scholarships in countries like the USA, UK,
+                Canada, Australia, and Europe.<a
+                  href=" https://globalscholarships.com"
+                  class="fw-bold"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -860,7 +915,7 @@ different accents worldwide.<a
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                [19]  ChatGPT 
+                [19] GOV.UK Scholarships
               </button>
             </h2>
             <div
@@ -871,48 +926,13 @@ different accents worldwide.<a
               <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
-                    > ChatGPT (for English Practice)</a
+                    >GOV.UK Scholarships</a
                   >
                 </h5>
-                Users can practice English by having text-based
-conversations on various topics.
-<a
-                  href=" https://chat.openai.com"
+                The official UK government website for funding opportunities.<a
+                  href=" https://www.gov.uk/search/all?keywords=scholarships"
                   class="fw-bold"
                 >
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item mt-2">
-            <h2 class="accordion-header" id="heading20">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse20"
-                aria-expanded="true"
-                aria-controls="collapseTwo"
-              >
-                [20] italki
-              </button>
-            </h2>
-            <div
-              id="collapse20"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingTwo"
-            >
-              <div class="accordion-body fs-5">
-                <h5>
-                  <a href="" class="text-decoration-none"
-                    >Trusted Source for General Knowledge, History, and Academic
-                    Topics</a
-                  >
-                </h5>
-                Connects students with professional English teachers for one-on-one lessons.<a href=" https://www.italki.com
-                " class="fw-bold">
                   Learn More
                 </a>
               </div>

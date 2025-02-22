@@ -31,13 +31,15 @@
 
     <style>
       .texth2 {
-        color: rgb(122, 70, 70);
+        color: #016a74;
       }
       h5 a {
         color: rgb(18, 20, 22);
+        font-weight: 600;
       }
       h5 a:hover {
         color: rgb(129, 125, 125);
+        
       }
       #navbar {
         transition: top 0.3s ease-in-out;
@@ -48,12 +50,22 @@
         width: 100%;
         z-index: 1000;
       }
+      
       @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
       .logo-text {
         color: rgb(45, 45, 45);
         font-family: "Rubik", sans-serif;
         font-weight: 700; /* Adjust the weight */
       }
+      .accordion-button {
+    background-color: #df610d !important; /* Change to your desired color */
+    color: white !important; /* Change text color if needed */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d15c31 !important; /* Change color when active */
+    color: white !important;
+}
     </style>
   </head>
   <body>
@@ -232,7 +244,7 @@
         </h2>
 
         <div class="accordion mt-4" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item;">
             <h2 class="accordion-header" id="heading1">
               <button
                 class="accordion-button"
@@ -250,7 +262,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Planet eBook – Free Classic Literature in eBook Format</a
@@ -287,7 +299,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none" id="bookcollection"
                     >Positive Brains – Free Self-Improvement & Motivational
@@ -325,7 +337,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >ManyBooks – Thousands of Free eBooks in Various Genres</a
@@ -361,7 +373,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >LibriVox – Free Audiobooks for Public Domain Books</a
@@ -395,7 +407,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Internet Archive – Millions of Free Books & Digital
@@ -433,7 +445,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >BookBub – Free & Discounted eBooks for Avid Readers</a
@@ -469,7 +481,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Open Library – Borrow & Read Free eBooks Online</a
@@ -506,7 +518,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >BookBoon – Free eBooks for Business & Education</a
@@ -543,7 +555,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Feedbooks – Free Public Domain & Original eBooks</a
@@ -579,7 +591,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Smashwords – Independent eBook Publishing & Free Reads</a
@@ -613,7 +625,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Project Gutenberg – Free Classic Literature eBooks</a
@@ -650,7 +662,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Google Books – Search & Read Millions of Digital Books</a
@@ -686,7 +698,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >PDFBooksWorld – Free Classic eBooks in PDF Format</a
@@ -721,7 +733,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >FreeTechBooks – Open-Source & Technical eBooks</a
@@ -758,7 +770,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Bookyards – Your Free Digital Library</a
@@ -791,7 +803,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >GetFreeBooks – Download Free Fiction & Non-Fiction
@@ -829,7 +841,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >eBookLobby – Free eBooks on Various Topics</a
@@ -862,7 +874,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingThree"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >FreeComputerBooks – IT & Programming Books Online</a
@@ -898,7 +910,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >OpenCulture – Free Online Courses, Books & More</a
@@ -935,7 +947,7 @@
               class="accordion-collapse collapse show"
               aria-labelledby="headingTwo"
             >
-              <div class="accordion-body">
+              <div class="accordion-body fs-5">
                 <h5>
                   <a href="" class="text-decoration-none"
                     >Library Genesis (LibGen) – Academic & Scientific eBooks</a
@@ -970,7 +982,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Goodreads – Book Reviews & Reading Community</a
@@ -1007,7 +1019,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Obooko – Free eBooks Across Multiple Genres</a
@@ -1044,7 +1056,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >O'Reilly – Tech & Business Learning Platform</a
@@ -1080,7 +1092,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >PDF Drive – Search & Download Millions of Free eBooks</a
@@ -1117,7 +1129,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Anna's Archive – Meta Search Engine for Free Books</a
@@ -1151,7 +1163,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >PDF Room – Download Free PDFs in Every Genre</a
@@ -1184,7 +1196,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body" id="studyguide">
+                <div class="accordion-body fs-5" id="studyguide">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >PDF Coffee – Free PDF Books & Documents</a
@@ -1221,7 +1233,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Dokumen Pub – Free Document Sharing & eBooks</a
@@ -1255,7 +1267,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Z Library – The World’s Largest Free eBook Database</a
@@ -1288,7 +1300,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Ocean of PDF – Free Fiction & Non-Fiction eBooks</a
@@ -1322,7 +1334,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Dirzon – Free eBooks, Documents & Research Papers</a
@@ -1354,7 +1366,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Booksfree – Free Book Rentals & Downloads</a
@@ -1387,7 +1399,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >EngbooksPDF – Free Engineering & Technical Books</a
@@ -1421,7 +1433,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Elejandria – Free Spanish Books & Literature</a
@@ -1458,7 +1470,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Espaebook – Free Spanish eBooks & Novels</a
@@ -1491,7 +1503,7 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fs-5">
                   <h5>
                     <a href="" class="text-decoration-none"
                       >Standard Ebooks – High-Quality Free Literature</a
