@@ -82,6 +82,19 @@
         font-family: "Rubik", sans-serif;
         font-weight: 700; /* Adjust the weight */
       }
+      .hidden {
+            display: none;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .content {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
     </style>
   </head>
   <body>
@@ -262,17 +275,7 @@
               <!-- <a class="nav-link" href="pages/aboutus.html">About</a> -->
             </li>
           </ul>
-          <form class="d-flex ms-auto" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          
         </div>
       </div>
     </nav>
@@ -293,7 +296,7 @@
                 />
                 <div class="card-body d-flex h-100 flex-column">
                   <h5
-                    class="card-title"
+                    class="card-title search-items"
                     onclick="window.location.href='pages/remotejobs.html'"
                   >
                     Top Sites for Remote Jobs & Freelance Work Online
@@ -721,6 +724,34 @@
     </footer>
 
     <script>
+      // Code for Search is Here.....
+      document
+        .getElementById("searchButton")
+        .addEventListener("click", function () {
+          let searchValue = document
+            .getElementById("searchInput")
+            .value.toLowerCase();
+          let items = document.querySelectorAll(".search-items");
+
+          items.forEach((item) => {
+            let text = item.textContent.toLowerCase();
+            let originalHTML = item.innerHTML;
+
+            if (text.include(searchValue) && searchValue !== "") {
+              let regex = new RegExp(searchValue, "gi");
+              let highlightedText = originalHTML.replace(
+                regex,
+                (match) => `<span class="highlight">${match}</span>`
+              );
+              item.innerHTML = highlightedText;
+              item.closest(".content").classList.remove("hidden");
+            } else {
+              item.innerHTML = originalHTML;
+              item.closest(".content").classList.add("hidden");
+            }
+          });
+        });
+      // --------------------------------------------------------------------
       let prevScrollPos = window.pageYOffset;
 
       window.onscroll = function () {
